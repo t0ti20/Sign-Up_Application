@@ -1,0 +1,1 @@
+/usr/bin/g++ -fPIC -g -shared -Wl,-soname,libDataBase.so -o libDataBase.so CMakeFiles/DataBase.dir/Source/DataBase.cpp.o 
