@@ -145,7 +145,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=DataBase
+CMAKE_PROJECT_NAME:STATIC=VERSION
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION:STATIC=1.0
@@ -232,6 +232,15 @@ DataBase_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 DataBase_SOURCE_DIR:STATIC=/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Libraries
+
+//Value Computed by CMake
+VERSION_BINARY_DIR:STATIC=/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Libraries/build
+
+//Value Computed by CMake
+VERSION_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+VERSION_SOURCE_DIR:STATIC=/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Libraries
 
 
 ########################
