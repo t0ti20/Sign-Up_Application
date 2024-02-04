@@ -92,6 +92,11 @@ DataBase_EXTERNAL_OBJECTS =
 
 Libraries/libDataBase.so: Libraries/CMakeFiles/DataBase.dir/Source/DataBase.cpp.o
 Libraries/libDataBase.so: Libraries/CMakeFiles/DataBase.dir/build.make
+Libraries/libDataBase.so: /usr/local/lib/libboost_log.so.1.84.0
+Libraries/libDataBase.so: /usr/local/lib/libboost_chrono.so.1.84.0
+Libraries/libDataBase.so: /usr/local/lib/libboost_filesystem.so.1.84.0
+Libraries/libDataBase.so: /usr/local/lib/libboost_atomic.so.1.84.0
+Libraries/libDataBase.so: /usr/local/lib/libboost_thread.so.1.84.0
 Libraries/libDataBase.so: Libraries/CMakeFiles/DataBase.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library libDataBase.so"
 	cd /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/build/Libraries && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/DataBase.dir/link.txt --verbose=$(VERBOSE)

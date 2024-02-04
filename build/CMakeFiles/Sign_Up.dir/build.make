@@ -109,6 +109,11 @@ Sign_Up: CMakeFiles/Sign_Up.dir/Source/Application/Main.cpp.o
 Sign_Up: CMakeFiles/Sign_Up.dir/Source/Company/Signup.cpp.o
 Sign_Up: CMakeFiles/Sign_Up.dir/build.make
 Sign_Up: Libraries/libDataBase.so
+Sign_Up: /usr/local/lib/libboost_log.so.1.84.0
+Sign_Up: /usr/local/lib/libboost_chrono.so.1.84.0
+Sign_Up: /usr/local/lib/libboost_filesystem.so.1.84.0
+Sign_Up: /usr/local/lib/libboost_atomic.so.1.84.0
+Sign_Up: /usr/local/lib/libboost_thread.so.1.84.0
 Sign_Up: CMakeFiles/Sign_Up.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Sign_Up"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Sign_Up.dir/link.txt --verbose=$(VERBOSE)

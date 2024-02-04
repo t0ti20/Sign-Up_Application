@@ -86,6 +86,46 @@
 			"defines" : 
 			[
 				{
+					"backtrace" : 2,
+					"define" : "BOOST_ATOMIC_DYN_LINK"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "BOOST_ATOMIC_NO_LIB"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "BOOST_CHRONO_DYN_LINK"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "BOOST_CHRONO_NO_LIB"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "BOOST_FILESYSTEM_DYN_LINK"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "BOOST_FILESYSTEM_NO_LIB"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "BOOST_LOG_DYN_LINK"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "BOOST_LOG_NO_LIB"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "BOOST_THREAD_DYN_LINK"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "BOOST_THREAD_NO_LIB"
+				},
+				{
 					"backtrace" : 4,
 					"define" : "my_name=\"Khaled\""
 				}
@@ -134,12 +174,32 @@
 				"role" : "flags"
 			},
 			{
-				"fragment" : "-Wl,-rpath,/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/build/Libraries",
+				"fragment" : "-Wl,-rpath,/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/build/Libraries:/usr/local/lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
 				"fragment" : "Libraries/libDataBase.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/local/lib/libboost_log.so.1.84.0",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/local/lib/libboost_chrono.so.1.84.0",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/local/lib/libboost_filesystem.so.1.84.0",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/local/lib/libboost_atomic.so.1.84.0",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/local/lib/libboost_thread.so.1.84.0",
 				"role" : "libraries"
 			}
 		],

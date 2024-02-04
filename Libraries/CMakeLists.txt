@@ -17,5 +17,15 @@ message(STATUS "Files To Be Compiled : ${SRC_FILES}")
 add_library(${Application_Name} SHARED ${SRC_FILES})
 # Specify include directories for the library
 target_include_directories(${Application_Name} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/Source)
+#Adding Boost Library
+find_package(Boost REQUIRED COMPONENTS log)
+if(Boost_FOUND)
+    # Print Boost version
+    message(STATUS "Boost Log Library Found at: ${Boost_INCLUDE_DIRS}")
+    message(STATUS "Boost version: ${Boost_VERSION}")
+    target_include_directories(${Application_Name} PUBLIC ${Boost_INCLUDE_DIRS})
+    include_directories(${Boost_INCLUDE_DIRS})
+    target_link_libraries(${Application_Name} ${Boost_LIBRARIES})
+endif()
 #Done Building Message
 message(STATUS "================== Done Building Library ==================")

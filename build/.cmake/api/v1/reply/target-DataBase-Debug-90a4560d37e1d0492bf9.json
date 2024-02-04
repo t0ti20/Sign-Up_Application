@@ -11,6 +11,7 @@
 		"commands" : 
 		[
 			"add_library",
+			"target_link_libraries",
 			"include_directories",
 			"target_include_directories"
 		],
@@ -31,16 +32,22 @@
 				"parent" : 0
 			},
 			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 28,
+				"parent" : 0
+			},
+			{
 				"file" : 1
 			},
 			{
-				"command" : 1,
+				"command" : 2,
 				"file" : 1,
 				"line" : 14,
-				"parent" : 2
+				"parent" : 3
 			},
 			{
-				"command" : 2,
+				"command" : 3,
 				"file" : 0,
 				"line" : 19,
 				"parent" : 0
@@ -62,17 +69,57 @@
 			"defines" : 
 			[
 				{
+					"backtrace" : 2,
+					"define" : "BOOST_ATOMIC_DYN_LINK"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "BOOST_ATOMIC_NO_LIB"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "BOOST_CHRONO_DYN_LINK"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "BOOST_CHRONO_NO_LIB"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "BOOST_FILESYSTEM_DYN_LINK"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "BOOST_FILESYSTEM_NO_LIB"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "BOOST_LOG_DYN_LINK"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "BOOST_LOG_NO_LIB"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "BOOST_THREAD_DYN_LINK"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "BOOST_THREAD_NO_LIB"
+				},
+				{
 					"define" : "DataBase_EXPORTS"
 				}
 			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"path" : "/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Source/Company"
 				},
 				{
-					"backtrace" : 4,
+					"backtrace" : 5,
 					"path" : "/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Libraries/Source"
 				}
 			],
@@ -99,6 +146,31 @@
 			{
 				"fragment" : "",
 				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/usr/local/lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/usr/local/lib/libboost_log.so.1.84.0",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/local/lib/libboost_chrono.so.1.84.0",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/local/lib/libboost_filesystem.so.1.84.0",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/local/lib/libboost_atomic.so.1.84.0",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/local/lib/libboost_thread.so.1.84.0",
+				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"

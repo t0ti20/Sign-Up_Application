@@ -15,8 +15,18 @@
 /*****************************************
 -----------     INCLUDES     -------------
 *****************************************/
+#include <boost/date_time/posix_time/posix_time_types.hpp>
+#include <boost/log/trivial.hpp>
+#include <boost/log/expressions.hpp>
+#include <boost/log/sources/severity_logger.hpp>
+#include <boost/log/sources/record_ostream.hpp>
+#include <boost/log/utility/setup/file.hpp>
+#include <boost/log/utility/setup/common_attributes.hpp>
+#include <boost/log/support/date_time.hpp>
+#include <algorithm>
 #include <iostream>
 #include <vector>
+
 /*****************************************
 --------     Configurations     ----------
 *****************************************/
@@ -29,10 +39,27 @@ constexpr const char* DEFAULT_NAME{"Default Name"};
 *****************************************/
 namespace Records_Handler
 {
+using namespace boost::log::trivial;
 enum class Console_Color{Default,Yellow,Blue,Red,Green};
+enum Severity_Level{Trace,Debug,Info,Warning,Error,Fatal};
+/*****************************************
+---------    Logging Class     -----------
+*****************************************/
+class Logging
+{ 
+private:
+     severity_level Level{trace};
+     boost::log::sources::severity_logger<severity_level> Log;
+public:
+     Logging(void);
+     ~Logging(void);
+     void Logging_Set_Level(severity_level Level);
+     void Logging_Message(const char* Message);
+     void operator<<(const char* Message);
+};
 /*****************************************
 ----------    Common Class     -----------
-*****************************************/  
+*****************************************/
 class Common
 {
 private:
@@ -59,7 +86,7 @@ void Set_Color(Console_Color Color);
 *                   After printing, the console color is reset to the default.
 *****************************************************************************************/
 template <typename Type>
-void operator<<(Type& Message)
+Common& operator<<(Type& Message)
 {
      switch (Current_Color) 
      {
@@ -80,6 +107,7 @@ void operator<<(Type& Message)
           break;
      }
      Current_Color=Console_Color::Default;
+     return *this;
 }
 /*****************************************************************************************
 * Function Name   : operator>>

@@ -13,14 +13,60 @@
 -----------     INCLUDES     -------------
 *****************************************/
 #include "DataBase.hpp"
-#include <algorithm> 
 /*****************************************
 ----------    GLOBAL DATA     ------------
 *****************************************/
 namespace Records_Handler
 {
+namespace logging = boost::log;
+namespace expr = boost::log::expressions;
+namespace keywords = boost::log::keywords;
+using namespace logging::trivial;
 using namespace std;
 Common Console_Print;
+Logging Logging_Handler;
+/*****************************************
+---------    Logging Class     -----------
+*****************************************/
+Logging::~Logging()
+{
+     Logging_Handler<<"Application Has Ended.";
+}
+Logging::Logging()
+{
+    /* Set up file logging with a specific format */
+    logging::add_file_log
+    (
+        /* Log file name */
+        keywords::file_name = "Application.log",
+        keywords::format =
+        (
+            expr::stream
+                /* Log timestamp */
+                << expr::format_date_time< boost::posix_time::ptime >("TimeStamp", "%Y-%m-%d %H:%M:%S") 
+                /* Log severity level */
+                << ": <" << logging::trivial::severity 
+                /* Log the actual message */
+                << "> " << expr::smessage
+        )
+    );
+    /* Add common attributes, such as timestamp */
+    logging::add_common_attributes();
+    Logging_Handler<<"Application Is Starting.";
+}
+void Logging::Logging_Set_Level(severity_level Logging_Level)
+{
+     Level=Logging_Level;
+}
+void Logging::Logging_Message(const char* Message)
+{
+     BOOST_LOG_SEV(Log,Level)<<Message;
+     Level=trace;
+}
+void Logging::operator<<(const char* Message)
+{
+     Logging_Message(Message);
+}
 /*****************************************
 ----------    Common Class     -----------
 *****************************************/  
@@ -73,15 +119,11 @@ void Record::Print_Record(Record User_Record)
      {
           Console_Print<<"------------------------------------\n";
           Console_Print.Set_Color(Console_Color::Yellow);
-          Console_Print<<"Record ID : ";
-          Console_Print<<User_Record.ID;
+          Console_Print<<"Record ID : "<<User_Record.ID;
           Console_Print.Set_Color(Console_Color::Yellow);
-          Console_Print<<"\nRecord Name : ";
-          Console_Print<<User_Record.Name;
+          Console_Print<<"\nRecord Name : "<<User_Record.Name;
           Console_Print.Set_Color(Console_Color::Yellow);
-          Console_Print<<"\nRecord Age : ";
-          Console_Print<<User_Record.Age;
-          Console_Print<<"\n";
+          Console_Print<<"\nRecord Age : "<<User_Record.Age<<"\n";
      }
 }
 /*****************************************
