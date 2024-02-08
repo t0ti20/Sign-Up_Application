@@ -1,1 +1,0 @@
-/usr/bin/g++ -g CMakeFiles/Main.dir/Source/Application/Main.cpp.o CMakeFiles/Main.dir/Source/Company/Company.cpp.o -o Main  -Wl,-rpath,/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/build/Libraries Libraries/libMathLibrary.so 

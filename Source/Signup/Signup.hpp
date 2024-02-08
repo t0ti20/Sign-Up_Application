@@ -33,30 +33,32 @@ private:
 protected:
 public:
 /*****************************************************************************************
-* Function Name   : Record::Record(const std::string& Record_Name, uint32_t Record_Age)
-* Description     : Default Instrctor For Record Class Creating New Record
-* Parameters (in) : New Record Name - New Record_Age.
+* Constructor Name: Sign_Up::Sign_Up
+* Description     : Constructor for the Sign_Up class that initializes the application.
+* Parameters (in) : None
 * Parameters (out): None
 * Return value    : None
-* Notes           : -This Is Default Instructor
+* Notes           : Initializes the application and prints a welcome message to the console.
 *****************************************************************************************/
 Sign_Up();
 /*****************************************************************************************
-* Function Name   : Record::Record(const std::string& Record_Name, uint32_t Record_Age)
-* Description     : Default Instrctor For Record Class Creating New Record
-* Parameters (in) : New Record Name - New Record_Age.
+* Destructor Name : Sign_Up::~Sign_Up
+* Description     : Destructor for the Sign_Up class that finalizes the application.
+* Parameters (in) : None
 * Parameters (out): None
 * Return value    : None
-* Notes           : -This Is Default Instructor
+* Notes           : Finalizes the application and prints a thank you message to the console.
 *****************************************************************************************/
 ~Sign_Up();
 /*****************************************************************************************
-* Function Name   : Record::Record(const std::string& Record_Name, uint32_t Record_Age)
-* Description     : Default Instrctor For Record Class Creating New Record
-* Parameters (in) : New Record Name - New Record_Age.
+* Function Name   : Sign_Up::Main_InterFace
+* Description     : Main interface function to interact with the application.
+* Parameters (in) : None
 * Parameters (out): None
 * Return value    : None
-* Notes           : -This Is Default Instructor
+* Notes           : Displays a menu with options to add records, fetch records, print all
+*                   records, or quit the application. Performs corresponding actions based
+*                   on user input.
 *****************************************************************************************/
 void Main_InterFace(void);
 };

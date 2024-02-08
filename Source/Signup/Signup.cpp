@@ -23,38 +23,39 @@ using namespace Records_Handler;
 Record_Manager DataBase;
 Common Console_Print;
 /*****************************************************************************************
-* Function Name   : Record::Record(const std::string& Record_Name, uint32_t Record_Age)
-* Description     : Default Instrctor For Record Class Creating New Record
-* Parameters (in) : New Record Name - New Record_Age.
+* Constructor Name: Sign_Up::Sign_Up
+* Description     : Constructor for the Sign_Up class that initializes the application.
+* Parameters (in) : None
 * Parameters (out): None
 * Return value    : None
-* Notes           : -This Is Default Instructor
+* Notes           : Initializes the application and prints a welcome message to the console.
 *****************************************************************************************/
 Sign_Up::Sign_Up()
 {
-     Console_Print.Set_Color(Console_Color::Green);
-     Console_Print<<"============== Welcome To My Application ==============\n";
+     Console_Print.Set_Color(Console_Color::Green)<<"================= Welcome To My Application =================\n";
 }
 /*****************************************************************************************
-* Function Name   : Record::Record(const std::string& Record_Name, uint32_t Record_Age)
-* Description     : Default Instrctor For Record Class Creating New Record
-* Parameters (in) : New Record Name - New Record_Age.
+* Destructor Name : Sign_Up::~Sign_Up
+* Description     : Destructor for the Sign_Up class that finalizes the application.
+* Parameters (in) : None
 * Parameters (out): None
 * Return value    : None
-* Notes           : -This Is Default Instructor
+* Notes           : Finalizes the application and prints a thank you message to the console.
 *****************************************************************************************/
 Sign_Up::~Sign_Up()
 {
-     Console_Print.Set_Color(Console_Color::Green);
-     Console_Print<<"============== Thanks For Using My Application ==============\n";
+     Console_Print.Set_Color(Console_Color::Green)<<"============== Thanks For Using My Application ==============\n";
+     Console_Print.Set_Color(Console_Color::Yellow)<<"=============================================================\n";
 }
 /*****************************************************************************************
-* Function Name   : Record::Record(const std::string& Record_Name, uint32_t Record_Age)
-* Description     : Default Instrctor For Record Class Creating New Record
-* Parameters (in) : New Record Name - New Record_Age.
+* Function Name   : operator>>
+* Description     : Overloaded extraction operator to read a choice from the console.
+* Parameters (in) : Console - The input stream from which to read the choice.
+*                   Choice  - The reference to the Choice_Menu variable to store the choice.
 * Parameters (out): None
-* Return value    : None
-* Notes           : -This Is Default Instructor
+* Return value    : A reference to the input stream.
+* Notes           : Reads a choice from the console, subtracts '1' to convert it to 
+*                   zero-based indexing, and stores it in the provided Choice_Menu variable.
 *****************************************************************************************/
 Common& operator>>(Common& Console, Choice_Menu& Choice)
 {
@@ -65,12 +66,14 @@ Common& operator>>(Common& Console, Choice_Menu& Choice)
     return Console;
 }
 /*****************************************************************************************
-* Function Name   : Record::Record(const std::string& Record_Name, uint32_t Record_Age)
-* Description     : Default Instrctor For Record Class Creating New Record
-* Parameters (in) : New Record Name - New Record_Age.
+* Function Name   : Sign_Up::Main_InterFace
+* Description     : Main interface function to interact with the application.
+* Parameters (in) : None
 * Parameters (out): None
 * Return value    : None
-* Notes           : -This Is Default Instructor
+* Notes           : Displays a menu with options to add records, fetch records, print all
+*                   records, or quit the application. Performs corresponding actions based
+*                   on user input.
 *****************************************************************************************/
 void Sign_Up::Main_InterFace(void)
 {
@@ -79,10 +82,8 @@ void Sign_Up::Main_InterFace(void)
      Record User_Record{};
      while(Flag)
      {    
-          Console_Print.Set_Color(Console_Color::Blue);
-          Console_Print<<"1) Add Record .\n2) Fetch Record .\n3) Print All Records .\n4) Quit .\n";
-          Console_Print.Set_Color(Console_Color::Yellow);
-          Console_Print<<"- Please Select An Option : ";Console_Print>>Choice;
+          Console_Print.Set_Color(Console_Color::Blue)<<"1) Add Record .\n2) Fetch Record .\n3) Print All Records .\n4) Quit .\n";
+          Console_Print.Set_Color(Console_Color::Yellow)<<"- Please Select An Option : ";Console_Print>>Choice;
           switch (Choice)
           {
                case Choice_Menu::Add_Record:
@@ -109,7 +110,7 @@ void Sign_Up::Main_InterFace(void)
                default:
                break;
           }
-          Console_Print<<"=============================================================\n";
+          Console_Print.Set_Color(Console_Color::Yellow)<<"=============================================================\n";
      }
 }
 }

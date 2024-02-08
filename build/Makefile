@@ -142,53 +142,53 @@ DataBase/fast:
 	$(MAKE) $(MAKESILENT) -f Libraries/CMakeFiles/DataBase.dir/build.make Libraries/CMakeFiles/DataBase.dir/build
 .PHONY : DataBase/fast
 
-Source/Application/Main.o: Source/Application/Main.cpp.o
-.PHONY : Source/Application/Main.o
+Source/Main/Main.o: Source/Main/Main.cpp.o
+.PHONY : Source/Main/Main.o
 
 # target to build an object file
-Source/Application/Main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sign_Up.dir/build.make CMakeFiles/Sign_Up.dir/Source/Application/Main.cpp.o
-.PHONY : Source/Application/Main.cpp.o
+Source/Main/Main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sign_Up.dir/build.make CMakeFiles/Sign_Up.dir/Source/Main/Main.cpp.o
+.PHONY : Source/Main/Main.cpp.o
 
-Source/Application/Main.i: Source/Application/Main.cpp.i
-.PHONY : Source/Application/Main.i
+Source/Main/Main.i: Source/Main/Main.cpp.i
+.PHONY : Source/Main/Main.i
 
 # target to preprocess a source file
-Source/Application/Main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sign_Up.dir/build.make CMakeFiles/Sign_Up.dir/Source/Application/Main.cpp.i
-.PHONY : Source/Application/Main.cpp.i
+Source/Main/Main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sign_Up.dir/build.make CMakeFiles/Sign_Up.dir/Source/Main/Main.cpp.i
+.PHONY : Source/Main/Main.cpp.i
 
-Source/Application/Main.s: Source/Application/Main.cpp.s
-.PHONY : Source/Application/Main.s
+Source/Main/Main.s: Source/Main/Main.cpp.s
+.PHONY : Source/Main/Main.s
 
 # target to generate assembly for a file
-Source/Application/Main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sign_Up.dir/build.make CMakeFiles/Sign_Up.dir/Source/Application/Main.cpp.s
-.PHONY : Source/Application/Main.cpp.s
+Source/Main/Main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sign_Up.dir/build.make CMakeFiles/Sign_Up.dir/Source/Main/Main.cpp.s
+.PHONY : Source/Main/Main.cpp.s
 
-Source/Company/Signup.o: Source/Company/Signup.cpp.o
-.PHONY : Source/Company/Signup.o
+Source/Signup/Signup.o: Source/Signup/Signup.cpp.o
+.PHONY : Source/Signup/Signup.o
 
 # target to build an object file
-Source/Company/Signup.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sign_Up.dir/build.make CMakeFiles/Sign_Up.dir/Source/Company/Signup.cpp.o
-.PHONY : Source/Company/Signup.cpp.o
+Source/Signup/Signup.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sign_Up.dir/build.make CMakeFiles/Sign_Up.dir/Source/Signup/Signup.cpp.o
+.PHONY : Source/Signup/Signup.cpp.o
 
-Source/Company/Signup.i: Source/Company/Signup.cpp.i
-.PHONY : Source/Company/Signup.i
+Source/Signup/Signup.i: Source/Signup/Signup.cpp.i
+.PHONY : Source/Signup/Signup.i
 
 # target to preprocess a source file
-Source/Company/Signup.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sign_Up.dir/build.make CMakeFiles/Sign_Up.dir/Source/Company/Signup.cpp.i
-.PHONY : Source/Company/Signup.cpp.i
+Source/Signup/Signup.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sign_Up.dir/build.make CMakeFiles/Sign_Up.dir/Source/Signup/Signup.cpp.i
+.PHONY : Source/Signup/Signup.cpp.i
 
-Source/Company/Signup.s: Source/Company/Signup.cpp.s
-.PHONY : Source/Company/Signup.s
+Source/Signup/Signup.s: Source/Signup/Signup.cpp.s
+.PHONY : Source/Signup/Signup.s
 
 # target to generate assembly for a file
-Source/Company/Signup.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sign_Up.dir/build.make CMakeFiles/Sign_Up.dir/Source/Company/Signup.cpp.s
-.PHONY : Source/Company/Signup.cpp.s
+Source/Signup/Signup.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sign_Up.dir/build.make CMakeFiles/Sign_Up.dir/Source/Signup/Signup.cpp.s
+.PHONY : Source/Signup/Signup.cpp.s
 
 # Help Target
 help:
@@ -200,12 +200,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... DataBase"
 	@echo "... Sign_Up"
-	@echo "... Source/Application/Main.o"
-	@echo "... Source/Application/Main.i"
-	@echo "... Source/Application/Main.s"
-	@echo "... Source/Company/Signup.o"
-	@echo "... Source/Company/Signup.i"
-	@echo "... Source/Company/Signup.s"
+	@echo "... Source/Main/Main.o"
+	@echo "... Source/Main/Main.i"
+	@echo "... Source/Main/Main.s"
+	@echo "... Source/Signup/Signup.o"
+	@echo "... Source/Signup/Signup.i"
+	@echo "... Source/Signup/Signup.s"
 .PHONY : help
 
 

@@ -10,11 +10,11 @@
 /*------ Includes ------*/
 #include "Signup.hpp"
 /*------ Using Application Namespace ------*/
-using namespace  Application;
+using namespace Application;
 /*------ Main Application ------*/
 int main()
 {
-    Sign_Up My_Application;
+    Sign_Up My_Application{};
     /*Start Main Application*/ 
     My_Application.Main_InterFace();
 }

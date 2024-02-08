@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Source/Application/Main.cpp" "CMakeFiles/Sign_Up.dir/Source/Application/Main.cpp.o" "gcc" "CMakeFiles/Sign_Up.dir/Source/Application/Main.cpp.o.d"
-  "/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Source/Company/Signup.cpp" "CMakeFiles/Sign_Up.dir/Source/Company/Signup.cpp.o" "gcc" "CMakeFiles/Sign_Up.dir/Source/Company/Signup.cpp.o.d"
+  "/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Source/Main/Main.cpp" "CMakeFiles/Sign_Up.dir/Source/Main/Main.cpp.o" "gcc" "CMakeFiles/Sign_Up.dir/Source/Main/Main.cpp.o.d"
+  "/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Source/Signup/Signup.cpp" "CMakeFiles/Sign_Up.dir/Source/Signup/Signup.cpp.o" "gcc" "CMakeFiles/Sign_Up.dir/Source/Signup/Signup.cpp.o.d"
   )
 
 # Targets to which this target links.

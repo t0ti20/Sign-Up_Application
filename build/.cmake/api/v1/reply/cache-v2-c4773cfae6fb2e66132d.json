@@ -1246,42 +1246,6 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "DataBase_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/build/Libraries"
-		},
-		{
-			"name" : "DataBase_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "OFF"
-		},
-		{
-			"name" : "DataBase_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Libraries"
-		},
-		{
 			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_Boost",
 			"properties" : 
 			[
@@ -1292,66 +1256,6 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "[/usr/local/lib/cmake/Boost-1.84.0/BoostConfig.cmake][cfound components: log ][v1.84.0()]"
-		},
-		{
-			"name" : "MathLibrary_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/build/Libraries"
-		},
-		{
-			"name" : "MathLibrary_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "OFF"
-		},
-		{
-			"name" : "MathLibrary_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Libraries"
-		},
-		{
-			"name" : "Name_1",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Comment_1"
-				}
-			],
-			"type" : "BOOL",
-			"value" : "ON"
-		},
-		{
-			"name" : "Name_2",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Comment_2"
-				}
-			],
-			"type" : "BOOL",
-			"value" : "TRUE"
 		},
 		{
 			"name" : "Sign_Up_BINARY_DIR",
@@ -1388,42 +1292,6 @@
 			],
 			"type" : "STATIC",
 			"value" : "/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Libraries"
-		},
-		{
-			"name" : "TestCPP_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/build"
-		},
-		{
-			"name" : "TestCPP_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "ON"
-		},
-		{
-			"name" : "TestCPP_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application"
 		},
 		{
 			"name" : "boost_atomic_DIR",

@@ -1,7 +1,7 @@
-CMakeFiles/Sign_Up.dir/Source/Company/Signup.cpp.o: \
- /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Source/Company/Signup.cpp \
+CMakeFiles/Sign_Up.dir/Source/Signup/Signup.cpp.o: \
+ /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Source/Signup/Signup.cpp \
  /usr/include/stdc-predef.h \
- /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Source/Company/Signup.hpp \
+ /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Source/Signup/Signup.hpp \
  /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Libraries/Source/DataBase.hpp \
  /usr/local/include/boost/date_time/posix_time/posix_time_types.hpp \
  /usr/local/include/boost/date_time/time_clock.hpp \

@@ -232,30 +232,6 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
-DataBase_BINARY_DIR:STATIC=/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/build/Libraries
-
-//Value Computed by CMake
-DataBase_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
-DataBase_SOURCE_DIR:STATIC=/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Libraries
-
-//Value Computed by CMake
-MathLibrary_BINARY_DIR:STATIC=/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/build/Libraries
-
-//Value Computed by CMake
-MathLibrary_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
-MathLibrary_SOURCE_DIR:STATIC=/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Libraries
-
-//Comment_1
-Name_1:BOOL=ON
-
-//Comment_2
-Name_2:BOOL=TRUE
-
-//Value Computed by CMake
 Sign_Up_BINARY_DIR:STATIC=/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/build/Libraries
 
 //Value Computed by CMake
@@ -263,15 +239,6 @@ Sign_Up_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
 Sign_Up_SOURCE_DIR:STATIC=/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Libraries
-
-//Value Computed by CMake
-TestCPP_BINARY_DIR:STATIC=/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/build
-
-//Value Computed by CMake
-TestCPP_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-TestCPP_SOURCE_DIR:STATIC=/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application
 
 //The directory containing a CMake configuration file for boost_atomic.
 boost_atomic_DIR:PATH=/usr/local/lib/cmake/boost_atomic-1.84.0

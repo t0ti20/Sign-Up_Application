@@ -1,1 +1,0 @@
-/usr/bin/g++ -fPIC -g -shared -Wl,-soname,libMathLibrary.so -o libMathLibrary.so CMakeFiles/MathLibrary.dir/Math.cpp.o 

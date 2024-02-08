@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Sign_Up.dir/Source/Application/Main.cpp.o"
-  "CMakeFiles/Sign_Up.dir/Source/Application/Main.cpp.o.d"
-  "CMakeFiles/Sign_Up.dir/Source/Company/Signup.cpp.o"
-  "CMakeFiles/Sign_Up.dir/Source/Company/Signup.cpp.o.d"
+  "CMakeFiles/Sign_Up.dir/Source/Main/Main.cpp.o"
+  "CMakeFiles/Sign_Up.dir/Source/Main/Main.cpp.o.d"
+  "CMakeFiles/Sign_Up.dir/Source/Signup/Signup.cpp.o"
+  "CMakeFiles/Sign_Up.dir/Source/Signup/Signup.cpp.o.d"
   "Sign_Up"
   "Sign_Up.pdb"
 )

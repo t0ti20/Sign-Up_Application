@@ -1,17 +1,17 @@
 [
 {
   "directory": "/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/build",
-  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_CHRONO_DYN_LINK -DBOOST_CHRONO_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_LOG_DYN_LINK -DBOOST_LOG_NO_LIB -DBOOST_THREAD_DYN_LINK -DBOOST_THREAD_NO_LIB -Dmy_name=\\\"Khaled\\\" -I/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Source/Company -I/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Libraries/Source -I/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/build -g -O0 -o CMakeFiles/Sign_Up.dir/Source/Application/Main.cpp.o -c /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Source/Application/Main.cpp",
-  "file": "/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Source/Application/Main.cpp"
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_CHRONO_DYN_LINK -DBOOST_CHRONO_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_LOG_DYN_LINK -DBOOST_LOG_NO_LIB -DBOOST_THREAD_DYN_LINK -DBOOST_THREAD_NO_LIB -I/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Source/Signup -I/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Libraries/Source -I/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/build -g -O0 -o CMakeFiles/Sign_Up.dir/Source/Main/Main.cpp.o -c /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Source/Main/Main.cpp",
+  "file": "/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Source/Main/Main.cpp"
 },
 {
   "directory": "/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/build",
-  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_CHRONO_DYN_LINK -DBOOST_CHRONO_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_LOG_DYN_LINK -DBOOST_LOG_NO_LIB -DBOOST_THREAD_DYN_LINK -DBOOST_THREAD_NO_LIB -Dmy_name=\\\"Khaled\\\" -I/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Source/Company -I/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Libraries/Source -I/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/build -g -O0 -o CMakeFiles/Sign_Up.dir/Source/Company/Signup.cpp.o -c /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Source/Company/Signup.cpp",
-  "file": "/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Source/Company/Signup.cpp"
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_CHRONO_DYN_LINK -DBOOST_CHRONO_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_LOG_DYN_LINK -DBOOST_LOG_NO_LIB -DBOOST_THREAD_DYN_LINK -DBOOST_THREAD_NO_LIB -I/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Source/Signup -I/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Libraries/Source -I/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/build -g -O0 -o CMakeFiles/Sign_Up.dir/Source/Signup/Signup.cpp.o -c /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Source/Signup/Signup.cpp",
+  "file": "/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Source/Signup/Signup.cpp"
 },
 {
   "directory": "/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/build/Libraries",
-  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_CHRONO_DYN_LINK -DBOOST_CHRONO_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_LOG_DYN_LINK -DBOOST_LOG_NO_LIB -DBOOST_THREAD_DYN_LINK -DBOOST_THREAD_NO_LIB -DDataBase_EXPORTS -I/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Source/Company -I/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Libraries/Source -g -fPIC -std=gnu++11 -o CMakeFiles/DataBase.dir/Source/DataBase.cpp.o -c /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Libraries/Source/DataBase.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_CHRONO_DYN_LINK -DBOOST_CHRONO_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_LOG_DYN_LINK -DBOOST_LOG_NO_LIB -DBOOST_THREAD_DYN_LINK -DBOOST_THREAD_NO_LIB -DDataBase_EXPORTS -I/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Libraries/Source -g -fPIC -std=gnu++11 -o CMakeFiles/DataBase.dir/Source/DataBase.cpp.o -c /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Libraries/Source/DataBase.cpp",
   "file": "/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Libraries/Source/DataBase.cpp"
 }
 ]

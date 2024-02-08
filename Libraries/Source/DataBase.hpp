@@ -48,14 +48,63 @@ enum Severity_Level{Trace,Debug,Info,Warning,Error,Fatal};
 class Logging
 { 
 private:
-     severity_level Level{trace};
-     boost::log::sources::severity_logger<severity_level> Log;
+severity_level Level{trace};
+boost::log::sources::severity_logger<severity_level> Log;
 public:
-     Logging(void);
-     ~Logging(void);
-     void Logging_Set_Level(severity_level Level);
-     void Logging_Message(const char* Message);
-     void operator<<(const char* Message);
+/*****************************************************************************************
+* Constructor Name: Logging::Logging
+* Description     : Constructor for the Logging class that initializes logging.
+* Parameters (in) : None
+* Parameters (out): None
+* Return value    : None
+* Notes           : Initializes file logging with a specific format and adds common 
+*                   attributes such as timestamp. Also, writes a message indicating the
+*                   start of the application to the logging handler.
+*****************************************************************************************/
+Logging(void);
+/*****************************************************************************************
+* Destructor Name : Logging::~Logging
+* Description     : Destructor for the Logging class that finalizes logging.
+* Parameters (in) : None
+* Parameters (out): None
+* Return value    : None
+* Notes           : Finalizes logging by writing a message indicating the end of the 
+*                   application to the logging handler.
+*****************************************************************************************/
+~Logging(void);
+/*****************************************************************************************
+* Method Name     : Logging& Logging::Logging_Set_Level
+* Description     : Sets the logging level for the Logging class.
+* Parameters (in) : Logging_Level - The severity level to be set for logging.
+* Parameters (out): None
+* Return value    : A reference to the Logging object.
+* Notes           : The specified severity level is used to filter log messages. Only
+*                   log messages with a severity level greater than or equal to the
+*                   specified level will be logged.
+*****************************************************************************************/
+Logging& Logging_Set_Level(severity_level Logging_Level);
+/*****************************************************************************************
+* Method Name     : Logging::Logging_Message
+* Description     : Logs a message with the specified severity level.
+* Parameters (in) : Message - The message to be logged.
+* Parameters (out): None
+* Return value    : None
+* Notes           : The message is logged with the severity level previously set using
+*                   Logging_Set_Level method. After logging the message, the severity
+*                   level is reset to 'trace'.
+*****************************************************************************************/
+void Logging_Message(const char* Message);
+/*****************************************************************************************
+* Operator Name   : Logging::operator<<
+* Description     : Overloaded insertion operator to log a message.
+* Parameters (in) : Message - The message to be logged.
+* Parameters (out): None
+* Return value    : None
+* Notes           : This operator is used to log a message with the severity level 
+*                   previously set using the Logging_Set_Level method. After logging the 
+*                   message, the severity level is reset to 'trace'.
+*****************************************************************************************/
+void operator<<(const char* Message);
 };
 /*****************************************
 ----------    Common Class     -----------
@@ -74,7 +123,9 @@ public:
 * Notes           : The specified color will be used for subsequent console output until
 *                   it is changed again.
 *****************************************************************************************/
-void Set_Color(Console_Color Color);
+Common& Set_Color(Console_Color Color);
+
+
 /*****************************************************************************************
 * Function Name   : operator<<
 * Description     : Overloaded insertion operator for printing colored messages to console.
@@ -151,7 +202,7 @@ Record(const std::string& Record_Name=std::string{DEFAULT_NAME}, uint32_t Record
 * Return value    : None
 * Notes           : If the user record has the default ID, an error message is printed.
 *****************************************************************************************/
-void Print_Record(Record User_Record);
+void Print_Record(Record& User_Record);
 };
 /*****************************************
 -------    Record Manager Class    -------
@@ -179,7 +230,7 @@ void Print_All_Records(void);
 * Notes           : If the user with the specified User_ID is not found, an empty Record 
 *                   object is returned.
 *****************************************************************************************/
-Record Fetch_Record(uint32_t User_ID);
+Record& Fetch_Record(uint32_t User_ID);
 /*****************************************************************************************
 * Function Name   : Record_Manager::Add_Record
 * Description     : Adds a new record to the Record Manager.
@@ -189,7 +240,7 @@ Record Fetch_Record(uint32_t User_ID);
 * Notes           : If the total number of records reaches the maximum limit, an error
 *                   message is printed, and the record is not added.
 *****************************************************************************************/
-void Add_Record(Record User_Record);
+void Add_Record(Record& User_Record) ;
 };
 }
 /********************************************************************
