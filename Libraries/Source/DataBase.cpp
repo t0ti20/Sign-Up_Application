@@ -158,10 +158,12 @@ Record::Record(const std::string& Record_Name,uint32_t Record_Age,uint32_t Recor
 * Return value    : None
 * Notes           : If the user record has the default ID, an error message is printed.
 *****************************************************************************************/
-void Record::Print_Record(Record& User_Record) 
+Error_Type Record::Print_Record(Record& User_Record) 
 {
+     Error_Type Return{Error_Type::No_Errors};
      if (User_Record.ID==DEFAULT_ID) 
      {
+          Return=Error_Type::Invalid_Record;
           Logging_Handler<<"Printing Invalid Record";
           Console_Print.Set_Color(Console_Color::Red)<< "Invalid user ID. No record found.\n"; 
      } 
@@ -173,6 +175,7 @@ void Record::Print_Record(Record& User_Record)
           Console_Print.Set_Color(Console_Color::Yellow)<<"\nRecord Name : "<<User_Record.Name;
           Console_Print.Set_Color(Console_Color::Yellow)<<"\nRecord Age : "<<User_Record.Age<<"\n";
      }
+     return Return;
 }
 /*****************************************
 -------    Record Manager Class    -------
@@ -186,8 +189,9 @@ void Record::Print_Record(Record& User_Record)
 * Notes           : If the total number of records reaches the maximum limit, an error
 *                   message is printed, and the record is not added.
 *****************************************************************************************/
-void Record_Manager::Add_Record(Record& User_Record) 
+Error_Type Record_Manager::Add_Record(Record& User_Record) 
 {
+     Error_Type Return{Error_Type::No_Errors};
      if (All_Records.size()<TOTAL_RECORDS) 
      {
           All_Records.push_back(User_Record);
@@ -196,9 +200,11 @@ void Record_Manager::Add_Record(Record& User_Record)
      } 
      else
      {
+          Return=Error_Type::Maximum_Records;
           Console_Print.Set_Color(Console_Color::Red)<<"Cannot add more records. Maximum limit reached.\n";
           Logging_Handler.Logging_Set_Level(severity_level::error)<<"Record Adding Error,Maximum Limit Reached.";
      }
+     return Return;
 }
 /*****************************************************************************************
 * Function Name   : Record_Manager::Fetch_Record
@@ -227,7 +233,11 @@ Record& Record_Manager::Fetch_Record(uint32_t User_ID)
           Logging_Handler<<"Susessfull Searching For Record.";
           Nedded_Record=*Counter;
      }
-     else {Logging_Handler.Logging_Set_Level(severity_level::error)<<"Cant Find Needded Record.";}
+     else 
+     {
+          Logging_Handler.Logging_Set_Level(severity_level::error)<<"Cant Find Needded Record.";
+          Nedded_Record.ID=DEFAULT_ID;
+     }
      return Nedded_Record;
 }
 /*****************************************************************************************
@@ -238,13 +248,15 @@ Record& Record_Manager::Fetch_Record(uint32_t User_ID)
 * Return value    : None
 * Notes           : Iterates through all records and prints each record using Print_Record.
 *****************************************************************************************/
-void Record_Manager::Print_All_Records(void)
+Error_Type Record_Manager::Print_All_Records(void)
 {
+     Error_Type Return{Error_Type::No_Errors};
      for(size_t Counter{};Counter<All_Records.size();++Counter)
      {
           Print_Record(All_Records[Counter]);
      }
      Logging_Handler<<"Printing All Records.";
+     return Return;
 }
 }
 /********************************************************************

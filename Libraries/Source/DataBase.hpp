@@ -41,6 +41,7 @@ namespace Records_Handler
 {
 using namespace boost::log::trivial;
 enum class Console_Color{Default,Yellow,Blue,Red,Green};
+enum class Error_Type {No_Errors,Invalid_Record,Maximum_Records};
 enum Severity_Level{Trace,Debug,Info,Warning,Error,Fatal};
 /*****************************************
 ---------    Logging Class     -----------
@@ -173,11 +174,12 @@ template <typename Type> void operator>>(Type& Input)
 };
 /*****************************************
 ----------    Record Class     -----------
-*****************************************/    
+*****************************************/
 class Record
 {
 protected:
 public:
+
      std::string Name;
      uint32_t Age;
      uint32_t ID;
@@ -200,7 +202,7 @@ Record(const std::string& Record_Name=std::string{DEFAULT_NAME}, uint32_t Record
 * Return value    : None
 * Notes           : If the user record has the default ID, an error message is printed.
 *****************************************************************************************/
-void Print_Record(Record& User_Record);
+Error_Type Print_Record(Record& User_Record);
 };
 /*****************************************
 -------    Record Manager Class    -------
@@ -218,7 +220,7 @@ public:
 * Return value    : None
 * Notes           : Iterates through all records and prints each record using Print_Record.
 *****************************************************************************************/
-void Print_All_Records(void);
+Error_Type Print_All_Records(void);
 /*****************************************************************************************
 * Function Name   : Record_Manager::Fetch_Record
 * Description     : Retrieves a record from the Record Manager based on the provided User_ID.
@@ -238,7 +240,7 @@ Record& Fetch_Record(uint32_t User_ID);
 * Notes           : If the total number of records reaches the maximum limit, an error
 *                   message is printed, and the record is not added.
 *****************************************************************************************/
-void Add_Record(Record& User_Record) ;
+Error_Type Add_Record(Record& User_Record);
 };
 }
 /********************************************************************

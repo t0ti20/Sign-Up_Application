@@ -73,29 +73,29 @@ CMakeFiles/Main.dir/Source/DataBase.cpp.o: CMakeFiles/Main.dir/flags.make
 CMakeFiles/Main.dir/Source/DataBase.cpp.o: ../Source/DataBase.cpp
 CMakeFiles/Main.dir/Source/DataBase.cpp.o: CMakeFiles/Main.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Libraries/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Main.dir/Source/DataBase.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Main.dir/Source/DataBase.cpp.o -MF CMakeFiles/Main.dir/Source/DataBase.cpp.o.d -o CMakeFiles/Main.dir/Source/DataBase.cpp.o -c /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Libraries/Source/DataBase.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Main.dir/Source/DataBase.cpp.o -MF CMakeFiles/Main.dir/Source/DataBase.cpp.o.d -o CMakeFiles/Main.dir/Source/DataBase.cpp.o -c /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Libraries/Source/DataBase.cpp
 
 CMakeFiles/Main.dir/Source/DataBase.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Main.dir/Source/DataBase.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Libraries/Source/DataBase.cpp > CMakeFiles/Main.dir/Source/DataBase.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Libraries/Source/DataBase.cpp > CMakeFiles/Main.dir/Source/DataBase.cpp.i
 
 CMakeFiles/Main.dir/Source/DataBase.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Main.dir/Source/DataBase.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Libraries/Source/DataBase.cpp -o CMakeFiles/Main.dir/Source/DataBase.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Libraries/Source/DataBase.cpp -o CMakeFiles/Main.dir/Source/DataBase.cpp.s
 
 CMakeFiles/Main.dir/Source/DataBase_Test.cpp.o: CMakeFiles/Main.dir/flags.make
 CMakeFiles/Main.dir/Source/DataBase_Test.cpp.o: ../Source/DataBase_Test.cpp
 CMakeFiles/Main.dir/Source/DataBase_Test.cpp.o: CMakeFiles/Main.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Libraries/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Main.dir/Source/DataBase_Test.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Main.dir/Source/DataBase_Test.cpp.o -MF CMakeFiles/Main.dir/Source/DataBase_Test.cpp.o.d -o CMakeFiles/Main.dir/Source/DataBase_Test.cpp.o -c /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Libraries/Source/DataBase_Test.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Main.dir/Source/DataBase_Test.cpp.o -MF CMakeFiles/Main.dir/Source/DataBase_Test.cpp.o.d -o CMakeFiles/Main.dir/Source/DataBase_Test.cpp.o -c /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Libraries/Source/DataBase_Test.cpp
 
 CMakeFiles/Main.dir/Source/DataBase_Test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Main.dir/Source/DataBase_Test.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Libraries/Source/DataBase_Test.cpp > CMakeFiles/Main.dir/Source/DataBase_Test.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Libraries/Source/DataBase_Test.cpp > CMakeFiles/Main.dir/Source/DataBase_Test.cpp.i
 
 CMakeFiles/Main.dir/Source/DataBase_Test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Main.dir/Source/DataBase_Test.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Libraries/Source/DataBase_Test.cpp -o CMakeFiles/Main.dir/Source/DataBase_Test.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Libraries/Source/DataBase_Test.cpp -o CMakeFiles/Main.dir/Source/DataBase_Test.cpp.s
 
 # Object files for target Main
 Main_OBJECTS = \

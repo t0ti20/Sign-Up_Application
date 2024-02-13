@@ -25,31 +25,44 @@ class Database_Test : public testing::Test
 public:
     Record_Manager DataBase{};
     Record User_Record{};
-    std::stringstream captured_stdout;
     void SetUp()override
     {
         cout<<"Starting Test\n";
-        internal::CaptureStdout();
+    }
+    void TearDown()override
+    {
+        cout<<"Ending Test\n";
     }
 };
-TEST_F(Database_Test,Adding_Records)    
+TEST_F(Database_Test,Adding_Records_More_Maximum)    
 {
+    Error_Type Result{Error_Type::No_Errors};
     User_Record.Age=2;
     User_Record.ID=1;
     User_Record.Name="Ahmed";
-    /* Adding First Record */
+    for(uint32_t Counter{};Counter<4;Counter++)
+    {
+        User_Record.ID=Counter;
+        Result=DataBase.Add_Record(User_Record);
+        EXPECT_EQ(Result,Error_Type::No_Errors);
+    }
+    User_Record.ID=100;
+    Result=DataBase.Add_Record(User_Record);
+    EXPECT_EQ(Result,Error_Type::Maximum_Records);
+}
+TEST_F(Database_Test,Printing_Invalid_Record)    
+{
+    Error_Type Result{Error_Type::No_Errors};
+    User_Record.Age=2;
+    User_Record.ID=1;
+    User_Record.Name="Ahmed";
     DataBase.Add_Record(User_Record);
-    EXPECT_EQ(internal::GetCapturedStdout(),"\x1B[1;32mRecord Added Successfully.\n\x1B[0m");
-    /* Adding Records */
-    User_Record.ID=2;
-    DataBase.Add_Record(User_Record);
-    EXPECT_EQ(internal::GetCapturedStdout(),"\x1B[1;32mRecord Added Successfully.\n\x1B[0m");
-    // User_Record.ID=3;
-    // DataBase.Add_Record(User_Record);
-    // EXPECT_EQ(internal::GetCapturedStdout(),"\x1B[1;32mRecord Added Successfully.\n\x1B[0m");
-    // User_Record.ID=4;
-    // DataBase.Add_Record(User_Record);
-    // EXPECT_EQ(internal::GetCapturedStdout(),"\x1B[1;32mRecord Added Successfully.\n\x1B[0m");
+    Record &Test_1=DataBase.Fetch_Record(1);
+    Result=DataBase.Print_Record(Test_1);
+    EXPECT_EQ(Result,Error_Type::No_Errors);
+    Record &Test_2=DataBase.Fetch_Record(99);
+    Result=DataBase.Print_Record(Test_2);
+    EXPECT_EQ(Result,Error_Type::Invalid_Record);
 }
 /********************************************************************
  *  END OF FILE:  DataBase_Test.cpp
