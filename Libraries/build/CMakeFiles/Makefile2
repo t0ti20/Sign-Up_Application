@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Libra
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/Main.dir/all
+all: CMakeFiles/DataBase.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/Main.dir/clean
+clean: CMakeFiles/DataBase.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/Main.dir
+# Target rules for target CMakeFiles/DataBase.dir
 
 # All Build rule for target.
-CMakeFiles/Main.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Libraries/build/CMakeFiles --progress-num=1,2,3 "Built target Main"
-.PHONY : CMakeFiles/Main.dir/all
+CMakeFiles/DataBase.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataBase.dir/build.make CMakeFiles/DataBase.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataBase.dir/build.make CMakeFiles/DataBase.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Libraries/build/CMakeFiles --progress-num=1,2 "Built target DataBase"
+.PHONY : CMakeFiles/DataBase.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Libraries/build/CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Main.dir/all
+CMakeFiles/DataBase.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Libraries/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/DataBase.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Libraries/build/CMakeFiles 0
-.PHONY : CMakeFiles/Main.dir/rule
+.PHONY : CMakeFiles/DataBase.dir/rule
 
 # Convenience name for target.
-Main: CMakeFiles/Main.dir/rule
-.PHONY : Main
+DataBase: CMakeFiles/DataBase.dir/rule
+.PHONY : DataBase
 
 # clean rule for target.
-CMakeFiles/Main.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/clean
-.PHONY : CMakeFiles/Main.dir/clean
+CMakeFiles/DataBase.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataBase.dir/build.make CMakeFiles/DataBase.dir/clean
+.PHONY : CMakeFiles/DataBase.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

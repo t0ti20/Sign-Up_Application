@@ -104,7 +104,6 @@ void Sign_Up::Main_InterFace(void)
                     DataBase.Print_All_Records();
                break;
                case Choice_Menu::Quit:
-                    Console_Print<<"Quit\n";
                     Flag=false;
                break;
                default:

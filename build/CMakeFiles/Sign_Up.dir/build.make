@@ -73,29 +73,29 @@ CMakeFiles/Sign_Up.dir/Source/Main/Main.cpp.o: CMakeFiles/Sign_Up.dir/flags.make
 CMakeFiles/Sign_Up.dir/Source/Main/Main.cpp.o: ../Source/Main/Main.cpp
 CMakeFiles/Sign_Up.dir/Source/Main/Main.cpp.o: CMakeFiles/Sign_Up.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Sign_Up.dir/Source/Main/Main.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Sign_Up.dir/Source/Main/Main.cpp.o -MF CMakeFiles/Sign_Up.dir/Source/Main/Main.cpp.o.d -o CMakeFiles/Sign_Up.dir/Source/Main/Main.cpp.o -c /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Source/Main/Main.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Sign_Up.dir/Source/Main/Main.cpp.o -MF CMakeFiles/Sign_Up.dir/Source/Main/Main.cpp.o.d -o CMakeFiles/Sign_Up.dir/Source/Main/Main.cpp.o -c /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Source/Main/Main.cpp
 
 CMakeFiles/Sign_Up.dir/Source/Main/Main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Sign_Up.dir/Source/Main/Main.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Source/Main/Main.cpp > CMakeFiles/Sign_Up.dir/Source/Main/Main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Source/Main/Main.cpp > CMakeFiles/Sign_Up.dir/Source/Main/Main.cpp.i
 
 CMakeFiles/Sign_Up.dir/Source/Main/Main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Sign_Up.dir/Source/Main/Main.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Source/Main/Main.cpp -o CMakeFiles/Sign_Up.dir/Source/Main/Main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Source/Main/Main.cpp -o CMakeFiles/Sign_Up.dir/Source/Main/Main.cpp.s
 
 CMakeFiles/Sign_Up.dir/Source/Signup/Signup.cpp.o: CMakeFiles/Sign_Up.dir/flags.make
 CMakeFiles/Sign_Up.dir/Source/Signup/Signup.cpp.o: ../Source/Signup/Signup.cpp
 CMakeFiles/Sign_Up.dir/Source/Signup/Signup.cpp.o: CMakeFiles/Sign_Up.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Sign_Up.dir/Source/Signup/Signup.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Sign_Up.dir/Source/Signup/Signup.cpp.o -MF CMakeFiles/Sign_Up.dir/Source/Signup/Signup.cpp.o.d -o CMakeFiles/Sign_Up.dir/Source/Signup/Signup.cpp.o -c /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Source/Signup/Signup.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Sign_Up.dir/Source/Signup/Signup.cpp.o -MF CMakeFiles/Sign_Up.dir/Source/Signup/Signup.cpp.o.d -o CMakeFiles/Sign_Up.dir/Source/Signup/Signup.cpp.o -c /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Source/Signup/Signup.cpp
 
 CMakeFiles/Sign_Up.dir/Source/Signup/Signup.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Sign_Up.dir/Source/Signup/Signup.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Source/Signup/Signup.cpp > CMakeFiles/Sign_Up.dir/Source/Signup/Signup.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Source/Signup/Signup.cpp > CMakeFiles/Sign_Up.dir/Source/Signup/Signup.cpp.i
 
 CMakeFiles/Sign_Up.dir/Source/Signup/Signup.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Sign_Up.dir/Source/Signup/Signup.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Source/Signup/Signup.cpp -o CMakeFiles/Sign_Up.dir/Source/Signup/Signup.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Source/Signup/Signup.cpp -o CMakeFiles/Sign_Up.dir/Source/Signup/Signup.cpp.s
 
 # Object files for target Sign_Up
 Sign_Up_OBJECTS = \
@@ -108,6 +108,12 @@ Sign_Up_EXTERNAL_OBJECTS =
 Sign_Up: CMakeFiles/Sign_Up.dir/Source/Main/Main.cpp.o
 Sign_Up: CMakeFiles/Sign_Up.dir/Source/Signup/Signup.cpp.o
 Sign_Up: CMakeFiles/Sign_Up.dir/build.make
+Sign_Up: Libraries/libDataBase.so
+Sign_Up: /usr/local/lib/libboost_log.so.1.84.0
+Sign_Up: /usr/local/lib/libboost_chrono.so.1.84.0
+Sign_Up: /usr/local/lib/libboost_filesystem.so.1.84.0
+Sign_Up: /usr/local/lib/libboost_atomic.so.1.84.0
+Sign_Up: /usr/local/lib/libboost_thread.so.1.84.0
 Sign_Up: CMakeFiles/Sign_Up.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Sign_Up"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Sign_Up.dir/link.txt --verbose=$(VERBOSE)

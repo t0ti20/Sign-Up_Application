@@ -1,6 +1,7 @@
 /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/build/CMakeFiles/Sign_Up.dir
+/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/build/CMakeFiles/doc_doxygen.dir
 /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/build/CMakeFiles/edit_cache.dir
 /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/build/CMakeFiles/rebuild_cache.dir
-/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/build/Libraries/CMakeFiles/Main.dir
+/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/build/Libraries/CMakeFiles/DataBase.dir
 /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/build/Libraries/CMakeFiles/edit_cache.dir
 /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/build/Libraries/CMakeFiles/rebuild_cache.dir

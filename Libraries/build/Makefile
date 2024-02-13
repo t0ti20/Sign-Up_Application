@@ -65,16 +65,6 @@ CMAKE_BINARY_DIR = /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Libra
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-.PHONY : test/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -127,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Main
+# Target rules for targets named DataBase
 
 # Build rule for target.
-Main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Main
-.PHONY : Main
+DataBase: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 DataBase
+.PHONY : DataBase
 
 # fast build rule for target.
-Main/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/build
-.PHONY : Main/fast
+DataBase/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataBase.dir/build.make CMakeFiles/DataBase.dir/build
+.PHONY : DataBase/fast
 
 Source/DataBase.o: Source/DataBase.cpp.o
 .PHONY : Source/DataBase.o
 
 # target to build an object file
 Source/DataBase.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/Source/DataBase.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataBase.dir/build.make CMakeFiles/DataBase.dir/Source/DataBase.cpp.o
 .PHONY : Source/DataBase.cpp.o
 
 Source/DataBase.i: Source/DataBase.cpp.i
@@ -152,7 +142,7 @@ Source/DataBase.i: Source/DataBase.cpp.i
 
 # target to preprocess a source file
 Source/DataBase.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/Source/DataBase.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataBase.dir/build.make CMakeFiles/DataBase.dir/Source/DataBase.cpp.i
 .PHONY : Source/DataBase.cpp.i
 
 Source/DataBase.s: Source/DataBase.cpp.s
@@ -160,32 +150,8 @@ Source/DataBase.s: Source/DataBase.cpp.s
 
 # target to generate assembly for a file
 Source/DataBase.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/Source/DataBase.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataBase.dir/build.make CMakeFiles/DataBase.dir/Source/DataBase.cpp.s
 .PHONY : Source/DataBase.cpp.s
-
-Source/DataBase_Test.o: Source/DataBase_Test.cpp.o
-.PHONY : Source/DataBase_Test.o
-
-# target to build an object file
-Source/DataBase_Test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/Source/DataBase_Test.cpp.o
-.PHONY : Source/DataBase_Test.cpp.o
-
-Source/DataBase_Test.i: Source/DataBase_Test.cpp.i
-.PHONY : Source/DataBase_Test.i
-
-# target to preprocess a source file
-Source/DataBase_Test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/Source/DataBase_Test.cpp.i
-.PHONY : Source/DataBase_Test.cpp.i
-
-Source/DataBase_Test.s: Source/DataBase_Test.cpp.s
-.PHONY : Source/DataBase_Test.s
-
-# target to generate assembly for a file
-Source/DataBase_Test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/Source/DataBase_Test.cpp.s
-.PHONY : Source/DataBase_Test.cpp.s
 
 # Help Target
 help:
@@ -195,14 +161,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... test"
-	@echo "... Main"
+	@echo "... DataBase"
 	@echo "... Source/DataBase.o"
 	@echo "... Source/DataBase.i"
 	@echo "... Source/DataBase.s"
-	@echo "... Source/DataBase_Test.o"
-	@echo "... Source/DataBase_Test.i"
-	@echo "... Source/DataBase_Test.s"
 .PHONY : help
 
 

@@ -1,0 +1,2 @@
+OUTPUT_DIRECTORY       = @CMAKE_CURRENT_BINARY_DIR@/Doxygen_Documentation/
+INPUT                  = @CMAKE_CURRENT_SOURCE_DIR@/Source/Main/ @CMAKE_CURRENT_SOURCE_DIR@/Source/Signup/ @CMAKE_CURRENT_SOURCE_DIR@/Libraries/Source/ @CMAKE_CURRENT_SOURCE_DIR@/Documentation

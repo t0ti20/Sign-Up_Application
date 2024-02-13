@@ -130,17 +130,30 @@ Sign_Up/fast:
 .PHONY : Sign_Up/fast
 
 #=============================================================================
-# Target rules for targets named Main
+# Target rules for targets named doc_doxygen
 
 # Build rule for target.
-Main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Main
-.PHONY : Main
+doc_doxygen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 doc_doxygen
+.PHONY : doc_doxygen
 
 # fast build rule for target.
-Main/fast:
-	$(MAKE) $(MAKESILENT) -f Libraries/CMakeFiles/Main.dir/build.make Libraries/CMakeFiles/Main.dir/build
-.PHONY : Main/fast
+doc_doxygen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/doc_doxygen.dir/build.make CMakeFiles/doc_doxygen.dir/build
+.PHONY : doc_doxygen/fast
+
+#=============================================================================
+# Target rules for targets named DataBase
+
+# Build rule for target.
+DataBase: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 DataBase
+.PHONY : DataBase
+
+# fast build rule for target.
+DataBase/fast:
+	$(MAKE) $(MAKESILENT) -f Libraries/CMakeFiles/DataBase.dir/build.make Libraries/CMakeFiles/DataBase.dir/build
+.PHONY : DataBase/fast
 
 Source/Main/Main.o: Source/Main/Main.cpp.o
 .PHONY : Source/Main/Main.o
@@ -198,7 +211,8 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... Main"
+	@echo "... doc_doxygen"
+	@echo "... DataBase"
 	@echo "... Sign_Up"
 	@echo "... Source/Main/Main.o"
 	@echo "... Source/Main/Main.i"

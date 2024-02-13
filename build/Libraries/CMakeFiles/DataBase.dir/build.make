@@ -73,15 +73,15 @@ Libraries/CMakeFiles/DataBase.dir/Source/DataBase.cpp.o: Libraries/CMakeFiles/Da
 Libraries/CMakeFiles/DataBase.dir/Source/DataBase.cpp.o: ../Libraries/Source/DataBase.cpp
 Libraries/CMakeFiles/DataBase.dir/Source/DataBase.cpp.o: Libraries/CMakeFiles/DataBase.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Libraries/CMakeFiles/DataBase.dir/Source/DataBase.cpp.o"
-	cd /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/build/Libraries && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Libraries/CMakeFiles/DataBase.dir/Source/DataBase.cpp.o -MF CMakeFiles/DataBase.dir/Source/DataBase.cpp.o.d -o CMakeFiles/DataBase.dir/Source/DataBase.cpp.o -c /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Libraries/Source/DataBase.cpp
+	cd /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/build/Libraries && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Libraries/CMakeFiles/DataBase.dir/Source/DataBase.cpp.o -MF CMakeFiles/DataBase.dir/Source/DataBase.cpp.o.d -o CMakeFiles/DataBase.dir/Source/DataBase.cpp.o -c /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Libraries/Source/DataBase.cpp
 
 Libraries/CMakeFiles/DataBase.dir/Source/DataBase.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DataBase.dir/Source/DataBase.cpp.i"
-	cd /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/build/Libraries && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Libraries/Source/DataBase.cpp > CMakeFiles/DataBase.dir/Source/DataBase.cpp.i
+	cd /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/build/Libraries && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Libraries/Source/DataBase.cpp > CMakeFiles/DataBase.dir/Source/DataBase.cpp.i
 
 Libraries/CMakeFiles/DataBase.dir/Source/DataBase.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DataBase.dir/Source/DataBase.cpp.s"
-	cd /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/build/Libraries && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Libraries/Source/DataBase.cpp -o CMakeFiles/DataBase.dir/Source/DataBase.cpp.s
+	cd /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/build/Libraries && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Libraries/Source/DataBase.cpp -o CMakeFiles/DataBase.dir/Source/DataBase.cpp.s
 
 # Object files for target DataBase
 DataBase_OBJECTS = \

@@ -1,0 +1,2 @@
+OUTPUT_DIRECTORY       = /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/build/Doxygen_Documentation/
+INPUT                  = /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Source/Main/ /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Source/Signup/ /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Libraries/Source/ /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Documentation
