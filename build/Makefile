@@ -130,17 +130,17 @@ Sign_Up/fast:
 .PHONY : Sign_Up/fast
 
 #=============================================================================
-# Target rules for targets named DataBase
+# Target rules for targets named Main
 
 # Build rule for target.
-DataBase: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 DataBase
-.PHONY : DataBase
+Main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Main
+.PHONY : Main
 
 # fast build rule for target.
-DataBase/fast:
-	$(MAKE) $(MAKESILENT) -f Libraries/CMakeFiles/DataBase.dir/build.make Libraries/CMakeFiles/DataBase.dir/build
-.PHONY : DataBase/fast
+Main/fast:
+	$(MAKE) $(MAKESILENT) -f Libraries/CMakeFiles/Main.dir/build.make Libraries/CMakeFiles/Main.dir/build
+.PHONY : Main/fast
 
 Source/Main/Main.o: Source/Main/Main.cpp.o
 .PHONY : Source/Main/Main.o
@@ -198,7 +198,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... DataBase"
+	@echo "... Main"
 	@echo "... Sign_Up"
 	@echo "... Source/Main/Main.o"
 	@echo "... Source/Main/Main.i"

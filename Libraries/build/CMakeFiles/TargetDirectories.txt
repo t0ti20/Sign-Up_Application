@@ -1,3 +1,4 @@
-/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Libraries/build/CMakeFiles/DataBase.dir
+/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Libraries/build/CMakeFiles/Main.dir
+/home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Libraries/build/CMakeFiles/test.dir
 /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Libraries/build/CMakeFiles/edit_cache.dir
 /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/Libraries/build/CMakeFiles/rebuild_cache.dir

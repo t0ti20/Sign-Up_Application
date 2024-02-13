@@ -124,8 +124,6 @@ public:
 *                   it is changed again.
 *****************************************************************************************/
 Common& Set_Color(Console_Color Color);
-
-
 /*****************************************************************************************
 * Function Name   : operator<<
 * Description     : Overloaded insertion operator for printing colored messages to console.

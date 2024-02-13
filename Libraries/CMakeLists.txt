@@ -1,22 +1,20 @@
 #Set Version
-cmake_minimum_required(VERSION 3.12)
-#Set Project Name
-project(${Application_Name} VERSION 1.0)
-#Building Message
-message(STATUS "================== Building Library ==================")
-#Set Application Name
-SET(Application_Name "DataBase")
-# Set C++ standard
-set(CMAKE_CXX_STANDARD 11)
-set(CMAKE_CXX_STANDARD_REQUIRED True)
-# Add Math library source files
-file(GLOB_RECURSE SRC_FILES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} "./Source/*.cpp")
-#Building Information Message
+cmake_minimum_required(VERSION 3.22)
+#Set Project Name   
+PROJECT(Test_CPP VERSION 22.22)
+#Set CPP Standard
+set(CMAKE_CXX_STANDARD 20)
+#Find Needed Package For This Project
+find_package(GTest REQUIRED)
+#Enable G-Test
+enable_testing()
+#Locate Source Files
+set(SRC_FILES "./Source/DataBase.cpp")
+set(SRC_TEST "./Source/DataBase_Test.cpp")
+#Add Executable
+set(Application_Name "Main")
+add_executable(${Application_Name} ${SRC_FILES} ${SRC_TEST})
 message(STATUS "Files To Be Compiled : ${SRC_FILES}")
-# Create a Dynamic library
-add_library(${Application_Name} SHARED ${SRC_FILES})
-# Specify include directories for the library
-target_include_directories(${Application_Name} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/Source)
 #Adding Boost Library
 find_package(Boost REQUIRED COMPONENTS log)
 if(Boost_FOUND)
@@ -25,7 +23,9 @@ if(Boost_FOUND)
     message(STATUS "Boost version: ${Boost_VERSION}")
     target_include_directories(${Application_Name} PUBLIC ${Boost_INCLUDE_DIRS})
     include_directories(${Boost_INCLUDE_DIRS})
-    target_link_libraries(${Application_Name} ${Boost_LIBRARIES})
+    #Link Gtest While Compiling
+    target_link_libraries(${Application_Name} PUBLIC ${Boost_LIBRARIES} GTest::gtest GTest::gmock_main)
 endif()
-#Done Building Message
-message(STATUS "================== Done Building Library ==================")
+#Include Google Test
+include (GoogleTest)
+gtest_discover_tests(${Application_Name})

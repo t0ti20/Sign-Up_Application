@@ -117,25 +117,25 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-Libraries/CMakeFiles/DataBase.dir/rule:
-	cd /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Libraries/CMakeFiles/DataBase.dir/rule
-.PHONY : Libraries/CMakeFiles/DataBase.dir/rule
+Libraries/CMakeFiles/Main.dir/rule:
+	cd /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Libraries/CMakeFiles/Main.dir/rule
+.PHONY : Libraries/CMakeFiles/Main.dir/rule
 
 # Convenience name for target.
-DataBase: Libraries/CMakeFiles/DataBase.dir/rule
-.PHONY : DataBase
+Main: Libraries/CMakeFiles/Main.dir/rule
+.PHONY : Main
 
 # fast build rule for target.
-DataBase/fast:
-	cd /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/build && $(MAKE) $(MAKESILENT) -f Libraries/CMakeFiles/DataBase.dir/build.make Libraries/CMakeFiles/DataBase.dir/build
-.PHONY : DataBase/fast
+Main/fast:
+	cd /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/build && $(MAKE) $(MAKESILENT) -f Libraries/CMakeFiles/Main.dir/build.make Libraries/CMakeFiles/Main.dir/build
+.PHONY : Main/fast
 
 Source/DataBase.o: Source/DataBase.cpp.o
 .PHONY : Source/DataBase.o
 
 # target to build an object file
 Source/DataBase.cpp.o:
-	cd /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/build && $(MAKE) $(MAKESILENT) -f Libraries/CMakeFiles/DataBase.dir/build.make Libraries/CMakeFiles/DataBase.dir/Source/DataBase.cpp.o
+	cd /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/build && $(MAKE) $(MAKESILENT) -f Libraries/CMakeFiles/Main.dir/build.make Libraries/CMakeFiles/Main.dir/Source/DataBase.cpp.o
 .PHONY : Source/DataBase.cpp.o
 
 Source/DataBase.i: Source/DataBase.cpp.i
@@ -143,7 +143,7 @@ Source/DataBase.i: Source/DataBase.cpp.i
 
 # target to preprocess a source file
 Source/DataBase.cpp.i:
-	cd /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/build && $(MAKE) $(MAKESILENT) -f Libraries/CMakeFiles/DataBase.dir/build.make Libraries/CMakeFiles/DataBase.dir/Source/DataBase.cpp.i
+	cd /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/build && $(MAKE) $(MAKESILENT) -f Libraries/CMakeFiles/Main.dir/build.make Libraries/CMakeFiles/Main.dir/Source/DataBase.cpp.i
 .PHONY : Source/DataBase.cpp.i
 
 Source/DataBase.s: Source/DataBase.cpp.s
@@ -151,8 +151,32 @@ Source/DataBase.s: Source/DataBase.cpp.s
 
 # target to generate assembly for a file
 Source/DataBase.cpp.s:
-	cd /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/build && $(MAKE) $(MAKESILENT) -f Libraries/CMakeFiles/DataBase.dir/build.make Libraries/CMakeFiles/DataBase.dir/Source/DataBase.cpp.s
+	cd /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/build && $(MAKE) $(MAKESILENT) -f Libraries/CMakeFiles/Main.dir/build.make Libraries/CMakeFiles/Main.dir/Source/DataBase.cpp.s
 .PHONY : Source/DataBase.cpp.s
+
+Source/DataBase_Test.o: Source/DataBase_Test.cpp.o
+.PHONY : Source/DataBase_Test.o
+
+# target to build an object file
+Source/DataBase_Test.cpp.o:
+	cd /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/build && $(MAKE) $(MAKESILENT) -f Libraries/CMakeFiles/Main.dir/build.make Libraries/CMakeFiles/Main.dir/Source/DataBase_Test.cpp.o
+.PHONY : Source/DataBase_Test.cpp.o
+
+Source/DataBase_Test.i: Source/DataBase_Test.cpp.i
+.PHONY : Source/DataBase_Test.i
+
+# target to preprocess a source file
+Source/DataBase_Test.cpp.i:
+	cd /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/build && $(MAKE) $(MAKESILENT) -f Libraries/CMakeFiles/Main.dir/build.make Libraries/CMakeFiles/Main.dir/Source/DataBase_Test.cpp.i
+.PHONY : Source/DataBase_Test.cpp.i
+
+Source/DataBase_Test.s: Source/DataBase_Test.cpp.s
+.PHONY : Source/DataBase_Test.s
+
+# target to generate assembly for a file
+Source/DataBase_Test.cpp.s:
+	cd /home/t0ti20/Desktop/VS-Code/GitHub/Sign-Up_Application/build && $(MAKE) $(MAKESILENT) -f Libraries/CMakeFiles/Main.dir/build.make Libraries/CMakeFiles/Main.dir/Source/DataBase_Test.cpp.s
+.PHONY : Source/DataBase_Test.cpp.s
 
 # Help Target
 help:
@@ -162,10 +186,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... DataBase"
+	@echo "... Main"
 	@echo "... Source/DataBase.o"
 	@echo "... Source/DataBase.i"
 	@echo "... Source/DataBase.s"
+	@echo "... Source/DataBase_Test.o"
+	@echo "... Source/DataBase_Test.i"
+	@echo "... Source/DataBase_Test.s"
 .PHONY : help
 
 
