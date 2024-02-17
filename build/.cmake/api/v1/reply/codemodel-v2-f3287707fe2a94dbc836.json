@@ -10,7 +10,7 @@
 					[
 						1
 					],
-					"jsonFile" : "directory-.-f5ebdc15457944623624.json",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.22"
@@ -25,7 +25,7 @@
 				},
 				{
 					"build" : "Libraries",
-					"jsonFile" : "directory-Libraries-e8f09d550bf1415af829.json",
+					"jsonFile" : "directory-Libraries-Debug-e8f09d550bf1415af829.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.12"
@@ -39,7 +39,7 @@
 					]
 				}
 			],
-			"name" : "",
+			"name" : "Debug",
 			"projects" : 
 			[
 				{
@@ -76,21 +76,21 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "DataBase::@23b4fa16e04a5d05b8e9",
-					"jsonFile" : "target-DataBase-c1feea4ea459336870b2.json",
+					"jsonFile" : "target-DataBase-Debug-76db60b8f4619ec3ea43.json",
 					"name" : "DataBase",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "Sign_Up::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Sign_Up-c5ee8d30437e137ce90e.json",
+					"jsonFile" : "target-Sign_Up-Debug-d5f42ebbdf3ec48a1558.json",
 					"name" : "Sign_Up",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "doc_doxygen::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-doc_doxygen-543d04314450c0d7b840.json",
+					"jsonFile" : "target-doc_doxygen-Debug-543d04314450c0d7b840.json",
 					"name" : "doc_doxygen",
 					"projectIndex" : 0
 				}
